@@ -1,4 +1,4 @@
-**_Disclaimer:_** _I will only be using the examples from the text as my system's input as requested by AOC's creator, Eric Wastl._
+**_Disclaimer:_** _I will only be using the examples from the text as my system's input as requested by AOC's creator, Eric Wastl, when doing writeups of my work and thought process. Also, puzzle inputs, personal or generic, are not saved in this repo at the request of AOC's creator._
 
 # Advent of Code 2024
 
