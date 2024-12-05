@@ -7,7 +7,6 @@ import (
 	"strings"
 	"slices"
 	"strconv"
-	//"math"
 )
 
 func check(e error){
@@ -68,15 +67,10 @@ func main() {
 			})
 
 			if issue {
-				// if there's an issue we need to break out early as to not overwrite issue
+				// if there's an issue we need to break out to address
 				break
 			}
 		} 
-
-		// if !issue {
-		// 	pos := len(iv) / 2
-		// 	sum += toIntCheckErr(iv[pos])
-		// }
 
 		if issue {
 			slices.SortFunc(iv, func(X, Y string) int {
