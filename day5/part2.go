@@ -7,6 +7,7 @@ import (
 	"strings"
 	"slices"
 	"strconv"
+	//"math"
 )
 
 func check(e error){
@@ -72,12 +73,24 @@ func main() {
 			}
 		} 
 
-		if !issue {
-			// was going to import math.Ceil but this just rounds for me :)
+		// if !issue {
+		// 	pos := len(iv) / 2
+		// 	sum += toIntCheckErr(iv[pos])
+		// }
+
+		if issue {
+			slices.SortFunc(iv, func(X, Y string) int {
+				if slices.Contains(protocols[Y], X) {
+					return -1
+				}
+
+				return 1
+			})
+
 			pos := len(iv) / 2
 			sum += toIntCheckErr(iv[pos])
 		}
 	}
 
-	fmt.Printf("Middle Sums: %d\n", sum)
+	fmt.Printf("Part 2 Middle Sums: %d\n", sum)
 }
