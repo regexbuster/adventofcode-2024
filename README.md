@@ -16,7 +16,7 @@
 |  3  | \*\*  |                        Regex for the win                        |
 |  4  | \*\*  |     A bit verbose but was shooting for clarity while coding     |
 |  5  | \*\*  | Felt really confident going in and was able to use some sorting |
-|  6  |       |
+|  6  |  \*   |     Fun puzzle reminds me of a Professor Layton like puzzle     |
 |  7  |       |
 |  8  |       |
 |  9  |       |
