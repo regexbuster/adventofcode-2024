@@ -15,11 +15,6 @@ const (
 	MUL
 )
 
-var operandName = map[OperandType]string{
-	ADD: "Addition",
-	MUL: "Multiplication",
-}
-
 var operandSymbol = map[OperandType]string{
 	ADD: "+",
 	MUL: "*",
@@ -39,6 +34,21 @@ func NewEquation(result int, values []int) Equation{
 	}
 
 	return Equation{result, values, op}
+}
+
+func (eq Equation) Print() {
+	mathEq := strconv.Itoa(eq.Result) + " = " + strconv.Itoa(eq.Values[0])
+
+	for i := 0; i < len(eq.Operands); i++ {
+		switch eq.Operands[i]{
+		case ADD:
+			mathEq = mathEq + operandSymbol[ADD] + strconv.Itoa(eq.Values[i+1])
+		case MUL:
+			mathEq = mathEq + operandSymbol[MUL] + strconv.Itoa(eq.Values[i+1])
+		}
+	}
+
+	fmt.Println(mathEq)
 }
 
 func (eq Equation) Update() int {
@@ -115,6 +125,7 @@ func main(){
 
 		if eq.isSolvable() {
 			sum = sum + eq.Result
+			eq.Print()
 		}
 	}
 
