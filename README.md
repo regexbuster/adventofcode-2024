@@ -19,7 +19,7 @@
 |  6  |  \*   |        Fun puzzle reminds me of a Professor Layton like puzzle        |
 |  7  | \*\*  | Algorithm is inefficient but works well and I think is easy to follow |
 |  8  | \*\*  |                  Fun little coordinate challenge :)                   |
-|  9  |       |
+|  9  |  \*   |                         Fun little challenge                          |
 | 10  |       |
 | 11  |       |
 | 12  |       |
