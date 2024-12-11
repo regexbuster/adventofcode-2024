@@ -55,7 +55,7 @@ func (l *ValueList) blink () {
 }
 
 func main() {
-	file, err := os.Open("./puzzleInput.txt")
+	file, err := os.Open("./testInput.txt")
 	check(err)
 
 	s := bufio.NewScanner(file)
